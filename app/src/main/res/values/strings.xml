@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ProjectFlowers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- navigation bar buttons -->
+
+    <string name="navigation_bar_home_button">Home</string>
+    <string name="navigation_bar_packet_button">Packet</string>
+    <string name="navigation_bar_favorites_button">Favorites</string>
+    <string name="navigation_bar_profile_button">Profile</string>
+
+    <!-- login page -->
+
+    <string name="login_page_loginText">Login</string>
+    <string name="login_page_loginFieldText">Email/Telephone Number</string>
+    <string name="login_page_loginField">Smith123@gmail.com</string>
+    <string name="login_page_passwordFieldText">Password</string>
+    <string name="login_page_passwordField">Enter your password</string>
+    <string name="login_page_forgotPassword">Forgot password</string>
+    <string name="login_page_loginButton">LOGIN</string>
+    <string name="login_page_registrationButton">Registration</string>
+    <string name="login_page_private_politic">Private politic</string>
+
+    <!-- home top navigation bar buttons -->
+
+    <string name="home_navigation_bar_monobouquets">Mono bouquets</string>
+    <string name="home_navigation_bar_dried">Dried flowers</string>
+    <!--    <string name="home_navigation_bar_collected">Collected bouquets from 200r</string>-->
+    <string name="home_navigation_bar_collected">Mixed bouquets</string>
+    <string name="home_navigation_bar_wedding">Wedding flowers</string>
+
+    <!-- profile page buttons -->
+
+    <string name="aboutUs">About Us</string>
+    <string name="aboutApp">About Application</string>
+
+    <!-- main page -->
+
+    <string name="hiWords">Hello, User!</string>
+
+</resources>
+
+
