@@ -7,9 +7,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/app_name "
+        android:layout_width="79dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/app_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/categoryrectangle" />
@@ -20,8 +21,10 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_alternates"
         android:text="flowers"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
+        android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"

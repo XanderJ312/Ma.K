@@ -15,8 +15,7 @@ import com.example.projectflowers.adapter.CategoryAdapter;
 import com.example.projectflowers.databinding.ActivityMainBinding;
 import com.example.projectflowers.model.Category;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 

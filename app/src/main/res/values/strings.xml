@@ -24,11 +24,11 @@
 
     <!-- home top navigation bar buttons -->
 
-    <string name="home_navigation_bar_monobouquets">Mono bouquets</string>
-    <string name="home_navigation_bar_dried">Dried flowers</string>
+    <string name="home_navigation_bar_monobouquets">Mono\nbouquets</string>
+    <string name="home_navigation_bar_dried">Dried\nflowers</string>
     <!--    <string name="home_navigation_bar_collected">Collected bouquets from 200r</string>-->
-    <string name="home_navigation_bar_collected">Mixed bouquets</string>
-    <string name="home_navigation_bar_wedding">Wedding flowers</string>
+    <string name="home_navigation_bar_collected">Mixed\nbouquets</string>
+    <string name="home_navigation_bar_wedding">Wedding\nflowers</string>
 
     <!-- profile page buttons -->
 

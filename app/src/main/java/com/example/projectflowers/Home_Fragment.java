@@ -16,38 +16,22 @@ import com.example.projectflowers.model.Category;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Home_Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class Home_Fragment extends Fragment {
 
-    RecyclerView CategoryRecicler;
-    CategoryAdapter category_adapter;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    RecyclerView categoryRecycler;
+    CategoryAdapter categoryAdapter;
+
 
     public Home_Fragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Home_Fragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static Home_Fragment newInstance(String param1, String param2) {
         Home_Fragment fragment = new Home_Fragment();
         Bundle args = new Bundle();
@@ -57,36 +41,30 @@ public class Home_Fragment extends Fragment {
         return fragment;
     }
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-
-        List<Category> categoriesList = new ArrayList<>();
-        categoriesList.add(new Category(1, "@string/home_navigation_bar_monobouquets"));
-        categoriesList.add(new Category(2, "@string/home_navigation_bar_dried"));
-        categoriesList.add(new Category(3, "@string/home_navigation_bar_collected"));
-        categoriesList.add(new Category(4, "@string/home_navigation_bar_wedding"));
-
-        setCategoryRecycler(categoriesList);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_home_, container, false);
+
+        List<Category> categoryList = new ArrayList<>();
+        categoryList.add(new Category(1, getString(R.string.home_navigation_bar_monobouquets)));
+        categoryList.add(new Category(2, getString(R.string.home_navigation_bar_dried)));
+        categoryList.add(new Category(3, getString(R.string.home_navigation_bar_collected)));
+        categoryList.add(new Category(4, getString(R.string.home_navigation_bar_wedding)));
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false);
+        categoryRecycler = view.findViewById(R.id.RecyclerViewCategory);
+        categoryRecycler.setLayoutManager(layoutManager);
+        categoryAdapter = new CategoryAdapter(getContext(), categoryList);
+        categoryRecycler.setAdapter(categoryAdapter);
+
+        return view;
     }
 
-    private void setCategoryRecycler(List<Category> categoriesList) {
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
-        CategoryRecicler = findViewById(R.id.RecyclerViewCategory);
-        CategoryRecicler.setLayoutManager(layoutManager);
-
-        category_adapter = new CategoryAdapter(this, categoriesList);
-        CategoryRecicler.setAdapter(category_adapter);
-    }
 }
