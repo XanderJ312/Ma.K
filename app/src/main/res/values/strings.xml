@@ -6,7 +6,7 @@
     <!-- navigation bar buttons -->
 
     <string name="navigation_bar_home_button">Home</string>
-    <string name="navigation_bar_packet_button">Packet</string>
+    <string name="navigation_bar_packet_button">Shopping Cart</string>
     <string name="navigation_bar_favorites_button">Favorites</string>
     <string name="navigation_bar_profile_button">Profile</string>
 
@@ -38,6 +38,7 @@
     <!-- main page -->
 
     <string name="hiWords">Hello, User!</string>
+
 
 </resources>
 

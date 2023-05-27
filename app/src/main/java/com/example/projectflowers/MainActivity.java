@@ -4,16 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.widget.EditText;
-import android.widget.Toast;
 import android.os.Bundle;
-
-import com.example.projectflowers.adapter.CategoryAdapter;
 import com.example.projectflowers.databinding.ActivityMainBinding;
-import com.example.projectflowers.model.Category;
 
 
 
